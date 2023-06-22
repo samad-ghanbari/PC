@@ -1,0 +1,315 @@
+$blueColor: #007bff;
+$indigoColor: #6610f2;
+$purpleColor: #6f42c1;
+$pinkColor: #e83e8c;
+$redColor: #dc3545;
+$orangeColor: #fd7e14;
+$yellowColor: #ffc107;
+$greenColor: #28a745;
+$tealColor: #20c997;
+$cyanColor: #17a2b8;
+$whiteColor: #fff;
+$grayColor: #6c757d;
+$grayDarkColor: #343a40;
+$primaryColor: #007bff;
+$secondaryColor: #6c757d;
+$successColor: #28a745;
+$infoColor: #17a2b8;
+$warningColor: #ffc107;
+$dangerColor: #dc3545;
+$lightColor: #f8f9fa;
+$darkColor: #343a40;
+
+@font-face
+{
+  font-family: yekan;
+  src: url('fonts/yekan.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face
+{
+  font-family: bmitra;
+  src: url('fonts/bmitra.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face
+{
+  font-family: calibri;
+  src: url('fonts/calibri.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face
+{
+  font-family: calibri;
+  src: url('fonts/calibrib.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face
+{
+  font-family: calibri;
+  src: url('fonts/calibrii.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+.en-font
+{
+  font-family: calibri;
+}
+.fa-font
+{
+  font-family: bmitra;
+}
+.font-16px {font-size:16px;}
+.font-18px{font-size:18px;}
+.font-20px{font-size:20px;}
+
+html body
+{
+  font-family: bmitra;
+  font-size:20px;
+  color: $darkColor;
+}
+
+.z-index-top { z-index: 1040;}
+
+// size
+.max-width-100px { max-width:100px;}
+.max-width-200px { max-width:200px;}
+.max-width-300px { max-width:300px;}
+.max-width-400px { max-width:400px;}
+.max-width-500px { max-width:500px;}
+.max-width-1000px { max-width:1000px;}
+.min-width-100px { min-width:100px;}
+.min-width-200px { min-width:200px;}
+.min-width-300px { min-width:300px;}
+.min-width-400px { min-width:400px;}
+.min-width-500px { min-width:500px;}
+.min-width-1000px { min-width:1000px;}
+.w-50px{width:50px;}
+.w-100px{width:100px;}
+.w-200px{width:200px;}
+.w-300px{width:300px;}
+.h-50px{height:50px; }
+.h-100px{height:100px;}
+.h-200px{height:200px;}
+.h-250px{height:250px;}
+.h-300px{height:300px;}
+
+.borderBox {box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;}
+.contentBox {box-sizing: content-box; -moz-box-sizing: content-box; -webkit-box-sizing: content-box;}
+
+.dir-rtl{direction:rtl;}
+.dir-ltr{direction:ltr;}
+
+// margin
+.margin-10px { margin:10px; }
+.margin-20px { margin:20px; }
+.m-5px{margin:5px;}
+.m-10px{margin:10px;}
+.m-20px{margin:20px;}
+.p-5px{padding:5px;}
+.p-10px{padding:10px;}
+.p-20px{padding:20px;}
+
+a.disabled
+{
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+  color: #888;
+}
+a:hover{text-decoration: none; cursor: pointer;}
+
+// separator
+.hr-text
+{
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid $infoColor;
+  line-height: 0.1em;
+  margin: 50px 0 50px;
+}
+.hr-text span
+{
+  background:#fff;
+  color:$infoColor;
+  font-weight: bold;
+  padding:5px 10px;
+  border-radius: 5px;
+}
+
+.user-panel .info
+{
+  font-size: 0.5rem;
+}
+// shadow
+.text-shadow-primary{ text-shadow: 5px 5px 10px $primaryColor;}
+.text-shadow-white{ text-shadow: 5px 5px 10px #ffffff;}
+.text-shadow-dark{ text-shadow: 5px 5px 10px #000000;}
+.box-shadow-dark
+{
+  box-shadow:0px 4px 4px 4px $darkColor;
+  -moz-box-shadow:0px 4px 4px 4px $darkColor;
+  -webkit-box-shadow:0px 4px 4px 4px $darkColor;
+}
+
+.login-cover
+{
+  height:100vh;
+  width:100%;
+  padding:0;
+  margin:0;
+  background-color: #eee;
+  overflow: auto;
+  -ms-overflow-style: auto;
+  -webkit-overflow-scrolling: auto;
+  background-image: url('./../images/bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: 100% 100%; ;
+  -moz-background-size: 100% 100%; ;
+  -o-background-size: 100% 100%; ;
+  background-size: 100% 100%;
+}
+
+// overflow
+.overflow-x-scroll{overflow-x: scroll; -ms-overflow-x: scroll;}
+.overflow-y-scroll{overflow-y: scroll; -ms-overflow-y: scroll;}
+
+// site css
+.footer
+{
+  background-color: #e9ecef;
+  font-size: .6em;
+  height: 60px; //(40px+2rem);
+  width:100%;
+  margin:0 !important;
+  padding:1em !important;
+}
+.footer .container
+{
+  max-width:100%;
+  width:100%;
+  height:100%;
+  padding:0;
+  margin:0;
+}
+.footer .container img
+{
+  float:right;
+  width:40px;
+  height:40px;
+}
+.footer .container p
+{
+  float:left;
+  line-height: 40px !important;
+  padding:0 !important;
+  margin:0 !important;
+}
+
+.not-set {
+  color: #c55;
+  font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+  content: '';
+  left: 3px;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: solid 5px transparent;
+  margin: 4px 4px 2px 4px;
+  background: transparent;
+}
+
+a.asc:after {
+  border-bottom: solid 7px #212529;
+  border-top-width: 0;
+}
+
+a.desc:after {
+  border-top: solid 7px #212529;
+  border-bottom-width: 0;
+}
+
+.grid-view th {
+  white-space: nowrap;
+}
+
+.hint-block {
+  display: block;
+  margin-top: 5px;
+  color: #999;
+}
+// background
+.bg-ddd{background-color:#ddd;}
+.bg-bbb{background-color:#ddd;}
+.bg-white-transparent{background-color: rgba(200,200,200,0.8);}
+
+//  pagination
+.pagination
+{
+  //justify-content: left;
+}
+.pagination > li
+{
+  margin:2px;
+  width: 30px;
+  height:25px;
+  background-color:$infoColor;
+  color:white;
+  text-align:center;
+  line-height:25px;
+  border-radius:5px;
+}
+.pagination > li:hover
+{
+  background-color:darken($infoColor, 10%);
+}
+.pagination > li >a
+{
+  color:white;
+  text-decoration: none;
+  display:inline-block;
+  width:100%;
+  height:100%;
+}
+.pagination .disabled
+{
+  background-color: $grayColor !important;
+}
+.pagination .active
+{
+  background-color: $grayColor !important;
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+}
+//gridview link white
+.link-white a
+{
+  color:white;
+}
+// braedcrumbs
+.breadcrumb li a
+{
+  color:$infoColor;
+}
+//
+.selectedRow
+{
+  box-shadow:       0px 2px 4px 2px rgba(0, 0, 0,0.5);
+  -moz-box-shadow:   0px 2px 4px 2px rgba(0, 0, 0,0.5);
+  -webkit-box-shadow:0px 2px 4px 2px rgba(0, 0, 0,0.5);
+  font-weight: bold;
+  border-right:5px solid $infoColor;
+  background-color:#eee !important;
+}
